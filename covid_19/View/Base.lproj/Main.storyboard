@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="InG-su-wvT">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -112,7 +112,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2u-e6-wSM">
                                         <rect key="frame" x="0.0" y="424" width="334" height="309"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-india-map-100" translatesAutoresizingMaskIntoConstraints="NO" id="62w-xP-Ano">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="holidays" translatesAutoresizingMaskIntoConstraints="NO" id="62w-xP-Ano">
                                                 <rect key="frame" x="0.0" y="8" width="326" height="285"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -131,7 +131,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ifv-ON-ojP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="India" id="lTg-v5-Dv7">
+                    <tabBarItem key="tabBarItem" title="India" image="india_map" id="lTg-v5-Dv7">
                         <color key="badgeColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                     </tabBarItem>
                     <connections>
@@ -186,7 +186,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SLw-LH-Qr3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="State Wise" id="8In-Lp-d8u"/>
+                    <tabBarItem key="tabBarItem" title="State Wise" image="icons8-gateway-of-india-30" selectedImage="icons8-gateway-of-india-30" id="8In-Lp-d8u">
+                        <color key="badgeColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="tableView" destination="Lt4-wc-qUZ" id="P6J-If-wn5"/>
                     </connections>
@@ -216,6 +218,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-india-map-100" width="33" height="33"/>
+        <image name="holidays" width="341" height="341"/>
+        <image name="icons8-gateway-of-india-30" width="30" height="30"/>
+        <image name="india_map" width="30" height="30"/>
     </resources>
 </document>
