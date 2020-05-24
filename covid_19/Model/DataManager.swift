@@ -16,7 +16,6 @@ struct DataManager {
     
     var delegate : Covid19DataManagerDelegate?
     
-    
     let url : String = "https://api.covid19india.org/data.json"
     func fetchData(){
         loadData(with: url)
@@ -32,7 +31,6 @@ struct DataManager {
                 if let data = data{
                     if let statesData = self.parseJSON(with : data){
                         DispatchQueue.main.async {
-                            print(self.delegate)
                             self.delegate?.didUpdateUIAfterFetchingDataSuccesful(with: statesData)
                         }
                     }
@@ -45,8 +43,6 @@ struct DataManager {
         let decoder = JSONDecoder()
         do{
             let statesData = try decoder.decode(StatesData.self, from: data)
-            print(statesData)
-            print(statesData.statewise.count)
             return statesData
         }catch{
             print(error)

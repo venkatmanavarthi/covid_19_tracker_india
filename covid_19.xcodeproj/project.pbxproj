@@ -16,6 +16,9 @@
 		B91ED1E62479820C002862E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91ED1E42479820C002862E9 /* LaunchScreen.storyboard */; };
 		B91ED1F224798429002862E9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ED1F124798429002862E9 /* DataManager.swift */; };
 		B91ED1F42479874F002862E9 /* StatesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ED1F32479874F002862E9 /* StatesData.swift */; };
+		B93ECFC9247A50FB00472FAE /* StateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECFC7247A50FB00472FAE /* StateCell.swift */; };
+		B93ECFCA247A50FB00472FAE /* StateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B93ECFC8247A50FB00472FAE /* StateCell.xib */; };
+		B93ECFCC247A567200472FAE /* StateWiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93ECFCB247A567200472FAE /* StateWiseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		B91ED1E72479820C002862E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B91ED1F124798429002862E9 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B91ED1F32479874F002862E9 /* StatesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesData.swift; sourceTree = "<group>"; };
+		B93ECFC7247A50FB00472FAE /* StateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCell.swift; sourceTree = "<group>"; };
+		B93ECFC8247A50FB00472FAE /* StateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StateCell.xib; sourceTree = "<group>"; };
+		B93ECFCB247A567200472FAE /* StateWiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateWiseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				B91ED1DC2479820B002862E9 /* Main.storyboard */,
+				B93ECFC7247A50FB00472FAE /* StateCell.swift */,
+				B93ECFC8247A50FB00472FAE /* StateCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				B91ED1DA2479820B002862E9 /* IndiaWiseViewController.swift */,
+				B93ECFCB247A567200472FAE /* StateWiseViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -161,6 +170,7 @@
 				B91ED1E62479820C002862E9 /* LaunchScreen.storyboard in Resources */,
 				B91ED1E32479820C002862E9 /* Assets.xcassets in Resources */,
 				B91ED1DE2479820B002862E9 /* Main.storyboard in Resources */,
+				B93ECFCA247A50FB00472FAE /* StateCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,12 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93ECFCC247A567200472FAE /* StateWiseViewController.swift in Sources */,
 				B91ED1DB2479820B002862E9 /* IndiaWiseViewController.swift in Sources */,
 				B91ED1F224798429002862E9 /* DataManager.swift in Sources */,
 				B91ED1D72479820B002862E9 /* AppDelegate.swift in Sources */,
 				B91ED1D92479820B002862E9 /* SceneDelegate.swift in Sources */,
 				B91ED1E12479820B002862E9 /* covid_19.xcdatamodeld in Sources */,
 				B91ED1F42479874F002862E9 /* StatesData.swift in Sources */,
+				B93ECFC9247A50FB00472FAE /* StateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
